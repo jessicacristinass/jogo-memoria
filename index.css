@@ -8,6 +8,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+#player{
+    text-align: center;
+    font-size: 150%;
+}
+
+#pontuacao{
+    text-align: center;
+    font-size: 150%;
 }
 
 .button{
@@ -52,6 +63,14 @@
     /*margin-top: -35pt;*/
     display: grid;
     place-items: center;
+}
+
+#ganhou{
+    text-align: center;
+    font-size: 500%;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:white;
 }
 
 .hide {
