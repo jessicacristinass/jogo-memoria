@@ -25,7 +25,7 @@ function Iniciar(){
 
     var corretos1 = numeros_carta(qtd_c,qtd_l); //chama a função e dá os valores que ela vai usar
     corretos1 = shuffle(corretos1); //embaralha as peças
-    console.log(corretos1); //põe no console para saber se foram todas
+    //console.log(corretos1); põe no console para saber se foram todas
 
     let gtc = ""; //vai ser usado para fazer as linhas e colunas
     let codCell = 0; //coloca o codigo nas cartas 
@@ -64,7 +64,7 @@ function Iniciar(){
 
                 if(paresC == paresT){ //confere se finalizou o jogo de acordo com a quantidade de pares
                     const fim = document.querySelector("#fim"); //pega a div fim
-                    fim.classList.toggle("hide"); //tira a class hide da div fim
+                    setTimeout(function(){fim.classList.toggle("hide");}, 1500); //tira a class hide da div fim depois de um tempo
                     fim.addEventListener("click", function(){ /*adciona um evento que faz a pagina recarregar quando aperta em
                     qualquer lugar da tela*/
                         location.reload();
@@ -109,7 +109,7 @@ function Iniciar2(){
 
   var corretos1 = numeros_carta(qtd_c,qtd_l); //chama a função e dá os valores que ela vai usar
   corretos1 = shuffle(corretos1); //embaralha as peças
-  console.log(corretos1); //põe no console para saber se foram todas
+  //console.log(corretos1); põe no console para saber se foram todas
 
   let gtc = ""; //vai ser usado para fazer as linhas e colunas
   let codCell = 0; //coloca o codigo nas cartas 
@@ -148,7 +148,7 @@ function Iniciar2(){
 
               if(paresC == paresT){ //confere se finalizou o jogo de acordo com a quantidade de pares
                   const fim = document.querySelector("#fim"); //pega a div fim
-                  fim.classList.toggle("hide"); //tira a class hide da div fim
+                  setTimeout(function(){fim.classList.toggle("hide");}, 1500); //tira a class hide da div fim depois de um tempo
                   fim.addEventListener("click", function(){ /*adciona um evento que faz a pagina recarregar quando aperta em
                   qualquer lugar da tela*/
                       location.reload();
@@ -193,7 +193,7 @@ function Iniciar3(){
 
   var corretos1 = numeros_carta(qtd_c,qtd_l); //chama a função e dá os valores que ela vai usar
   corretos1 = shuffle(corretos1); //embaralha as peças
-  console.log(corretos1); //põe no console para saber se foram todas
+  //console.log(corretos1); põe no console para saber se foram todas
 
   let gtc = ""; //vai ser usado para fazer as linhas e colunas
   let codCell = 0; //coloca o codigo nas cartas 
@@ -232,7 +232,7 @@ function Iniciar3(){
 
               if(paresC == paresT){ //confere se finalizou o jogo de acordo com a quantidade de pares
                   const fim = document.querySelector("#fim"); //pega a div fim
-                  fim.classList.toggle("hide"); //tira a class hide da div fim
+                  setTimeout(function(){fim.classList.toggle("hide");}, 1500); //tira a class hide da div fim depois de um tempo
                   fim.addEventListener("click", function(){ /*adciona um evento que faz a pagina recarregar quando aperta em
                   qualquer lugar da tela*/
                       location.reload();
@@ -261,6 +261,7 @@ function Iniciar3(){
   jogo.style.gridTemplateColumns = gtc;
 
 }
+
 
 function shuffle(array) {//fução que vai embaralhar as cartas (peguei na internet)
     let currentIndex = array.length,  randomIndex;
